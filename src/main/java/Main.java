@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,7 +5,7 @@ public class Main {
 
         CalculatorInterface calculator = new Calculator();
         System.out.println("Wellcome to Calculator");
-        boolean control= true;
+        boolean control = true;
         while (control) {
             System.out.println("1. add");
             System.out.println("2. subtract");
@@ -16,8 +15,7 @@ public class Main {
             System.out.println("6 squareroot");
             System.out.println("7 divide to one");
             System.out.println("8. exit!!");
-            Scanner input = new Scanner(System.in);
-            int number = input.nextInt();
+            int number = calculator.enterNumber();
             switch (number) {
                 case 1:
                     calculator.add(calculator.enterNumber(), calculator.enterNumber());
@@ -41,7 +39,7 @@ public class Main {
                     calculator.divideOne(calculator.enterNumber());
                     break;
                 case 8:
-                    control=false;
+                    control = false;
                     break;
                 default:
                     System.out.println("wrong number!!");
