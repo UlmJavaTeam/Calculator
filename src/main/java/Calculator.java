@@ -14,43 +14,43 @@ public class Calculator implements CalculatorInterface {
 
     @Override
     public int add(int a, int b) {
-
+        System.out.println("Result: "+ (a+b));
         return a + b;
     }
 
     @Override
     public int subtract(int a, int b) {
-
+        System.out.println("Result: "+ (a-b));
         return a - b;
     }
 
     @Override
     public int multply(int a, int b) {
-
+        System.out.println("Result: "+ (a*b));
         return a * b;
     }
 
     @Override
     public double divide(int a, int b) {
-
+        System.out.println("Result: "+ ((double)a/b));
         return (double) a / b;
     }
 
     @Override
     public int square(int a) {
-
+        System.out.println("Result: "+ (a+a));
         return a * a;
     }
 
     @Override
     public double squareRoot(int a) {
-
-        return (double) Math.sqrt(a);
+        System.out.println("Result: "+ Math.sqrt(a));
+        return Math.sqrt(a);
     }
 
     @Override
     public double divideOne(int a) {
-
+System.out.println("Result: "+(double)1/a);
         return (double) 1 / a;
     }
 
