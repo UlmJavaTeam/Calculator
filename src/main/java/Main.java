@@ -15,7 +15,9 @@ public class Main {
             System.out.println("6 squareroot");
             System.out.println("7 divide to one");
             System.out.println("8. exit!!");
-            int number = calculator.enterNumber();
+            int number1 = calculator.enterNumber();
+            int number= number1; //böyle extra atama yapmazsak hata yakalayamıyor??
+
             switch (number) {
                 case 1:
                     calculator.add(calculator.enterNumber(), calculator.enterNumber());
