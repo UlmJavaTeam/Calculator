@@ -37,9 +37,9 @@ public class Calculator implements CalculatorInterface{
 
         return 0;
     }
-
+    //    //divisor 1    1/2=0.5 girilen rakamı 1'e bölüyor,
     @Override
-    public double divideOne() {
+    public double divideOne(int a) {
         return 0;
     }
 

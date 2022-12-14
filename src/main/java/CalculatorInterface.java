@@ -25,7 +25,7 @@ public interface CalculatorInterface {
 
     //divisor 1    1/2=0.5
 
-    public double divideOne();
+    public double divideOne(int a);
 
 
 
