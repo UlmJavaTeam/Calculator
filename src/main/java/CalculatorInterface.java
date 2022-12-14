@@ -24,6 +24,10 @@ public interface CalculatorInterface {
     //square root
     public int squareRoot(int a);
 
+    //divisor 1    1/2=0.5
+
+    public double divideOne();
+
 
 
 
