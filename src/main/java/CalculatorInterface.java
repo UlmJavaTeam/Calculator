@@ -3,26 +3,26 @@ public interface CalculatorInterface {
 
 
     //addition
-    public void add(int a, int b);
+    public int add(int a, int b);
 
     //subtraction
-    public void subtract(int a, int b);
+    public int subtract(int a, int b);
 
     //multiplication
-    public void multply(int a, int b);
+    public int multply(int a, int b);
 
 
     //division
-    public void divide(int a, int b);
+    public int divide(int a, int b);
 
 
     //square
-    public void square(int a);
+    public int square(int a);
 
 
 
     //square root
-    public void squareRoot(int a);
+    public int squareRoot(int a);
 
 
 
