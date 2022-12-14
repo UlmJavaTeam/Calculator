@@ -1,6 +1,7 @@
 public interface CalculatorInterface {
     // Kenan abinin
 
+
     //addition
     public void add(int a, int b);
 
