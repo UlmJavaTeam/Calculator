@@ -13,16 +13,15 @@ public interface CalculatorInterface {
 
 
     //division
-    public int divide(int a, int b);
+    public double divide(int a, int b);
 
 
     //square
     public int square(int a);
 
 
-
     //square root
-    public int squareRoot(int a);
+    public double squareRoot(int a);
 
     //divisor 1    1/2=0.5
 
