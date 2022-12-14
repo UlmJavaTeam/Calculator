@@ -38,7 +38,7 @@ public class Calculator implements CalculatorInterface {
 
     @Override
     public int square(int a) {
-        System.out.println("Result: "+ (a+a));
+        System.out.println("Result: "+ (a*a));
         return a * a;
     }
 
@@ -50,19 +50,21 @@ public class Calculator implements CalculatorInterface {
 
     @Override
     public double divideOne(int a) {
-System.out.println("Result: "+(double)1/a);
+        System.out.println("Result: "+(double)1/a);
         return (double) 1 / a;
     }
 
-    public int enternumber(){
+    public int enterNumber(){
         int number=0;
         System.out.println("Please enter a number: ");
         while (true){
             try{
-                number= scan.nextInt();
+                // number= scan.nextInt(); döngü kendi içerisinde döndüğü ve yukarı çıkmadığı için yeni nesne yapamıyor
+                Scanner input= new Scanner(System.in);
+                number= input.nextInt();
                 break;
             }catch (Exception e){
-                System.out.println("Please enter a number!!!");
+                System.out.println("Invalid input!! Please enter a number!!!");
             }
         }
         return number;
