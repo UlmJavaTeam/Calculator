@@ -28,9 +28,4 @@ public interface CalculatorInterface {
     public double divideOne(int a);
 
 
-
-
-
-
-    
 }

@@ -4,9 +4,10 @@ public class Main {
     public static void main(String[] args) {
         //-- Kenan abinin
 
-        CalculatorInterface calculator= new Calculator();
+        CalculatorInterface calculator = new Calculator();
         System.out.println("Wellcome to Calculator");
-        while (true){
+        boolean control= true;
+        while (control) {
             System.out.println("1. add");
             System.out.println("2. subtract");
             System.out.println("3. multiply");
@@ -20,7 +21,7 @@ public class Main {
             switch (number) {
                 case 1:
                     calculator.add(input.nextInt(), input.nextInt());
-                            break;
+                    break;
                 case 2:
                     calculator.subtract(input.nextInt(), input.nextInt());
                     break;
@@ -30,38 +31,21 @@ public class Main {
                 case 4:
                     calculator.divide(input.nextInt(), input.nextInt());
                     break;
-                case 5 :
+                case 5:
                     calculator.square(input.nextInt());
                     break;
-                case 6 :
+                case 6:
                     calculator.squareRoot(input.nextInt());
                     break;
-                case 7 :
+                case 7:
                     calculator.divideOne(input.nextInt());
+                    break;
                 case 8:
-                    break;//burada break döngüyü nasıl kırıyor??
+                    control=false;
+                    break;
                 default:
                     System.out.println("wrong number!!");
-                    continue;
             }
-
-
-
-
-
-
-
-
-            break;
         }
-
-
-
-
-
-        calculator.add(3, 5);
-
-
-
     }
 }
