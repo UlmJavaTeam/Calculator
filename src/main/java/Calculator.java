@@ -54,12 +54,14 @@ System.out.println("Result: "+(double)1/a);
         return (double) 1 / a;
     }
 
-    public int enternumber(){
+    public int enterNumber(){
         int number=0;
         System.out.println("Please enter a number: ");
         while (true){
             try{
-                number= scan.nextInt();
+               // number= scan.nextInt(); döngü kendi içerisinde döndüğü ve yukarı çıkmadığı için yeni nesne yapamıyor
+                Scanner input= new Scanner(System.in);
+                number= input.nextInt();
                 break;
             }catch (Exception e){
                 System.out.println("Please enter a number!!!");
