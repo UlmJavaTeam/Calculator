@@ -59,7 +59,6 @@ public class Calculator implements CalculatorInterface {
         System.out.println("Please enter a number: ");
         while (true){
             try{
-                // number= scan.nextInt(); döngü kendi içerisinde döndüğü ve yukarı çıkmadığı için yeni nesne yapamıyor
                 Scanner input= new Scanner(System.in);
                 number= input.nextInt();
                 break;
