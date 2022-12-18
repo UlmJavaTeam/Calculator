@@ -44,13 +44,13 @@ public class Calculator implements CalculatorInterface {
 
     @Override
     public double squareRoot(int a) {
-        System.out.println("Result: √¯"+a+"= "+ Math.sqrt(a));
+        System.out.println("Result: V"+a+"= "+ Math.sqrt(a));
         return Math.sqrt(a);
     }
 
     @Override
     public double divideOne(int a) {
-        System.out.println("Result: 1/+"+a+"="+(double)1/a);
+        System.out.println("Result: 1/"+a+"="+(double)1/a);
         return (double) 1 / a;
     }
 
